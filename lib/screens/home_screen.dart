@@ -32,6 +32,8 @@ class HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("VALORANT AGENTS"),
         centerTitle: true,
+        backgroundColor: Color(0xFF1D1B20),
+        scrolledUnderElevation: 0.0,
       ),
       body: FutureBuilder<List<Agent>>(
         future: agentsFuture,

@@ -9,8 +9,11 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      backgroundColor: const Color(0xFF1D1B20),
       appBar: AppBar(
-        title: Text(agent.name.toUpperCase())
+        title: Text(agent.name.toUpperCase()),
+        backgroundColor: const Color(0xFF1D1B20),
+        scrolledUnderElevation: 0.0,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -19,7 +22,15 @@ class DetailScreen extends StatelessWidget {
             Image.network(
                 agent.fullPortrait,
                 height: 300,
-                fit: BoxFit.contain
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) {
+                  return const Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 20.0),
+                      child: Icon(Icons.account_circle, size: 120, color: Colors.white30),
+                    ),
+                  );
+                },
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
@@ -72,6 +83,9 @@ class DetailScreen extends StatelessWidget {
                                   width: 60,
                                   height: 60,
                                   color: Colors.white,
+                                  errorBuilder: (context, error, stackTrace) {
+                                    return const Icon(Icons.bolt, size: 60, color: Colors.white30);
+                                  },
                                 )
                               else
                                 const Icon(Icons.bolt, size: 60, color: Colors.white),
