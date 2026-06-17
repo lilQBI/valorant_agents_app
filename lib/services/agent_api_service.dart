@@ -20,6 +20,7 @@ class AgentApiService {
           iconUrl: agentMap["displayIcon"] ?? "",
           fullPortrait: agentMap["fullPortrait"] ?? "",
           role: agentMap["role"]?["displayName"] ?? "Brak roli",
+          abilities: agentMap["abilities"] ?? [],
         );
       }).toList();
     } else {

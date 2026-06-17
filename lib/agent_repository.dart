@@ -5,6 +5,7 @@ class Agent{
   final String iconUrl;
   final String fullPortrait;
   final String role;
+  final List<dynamic> abilities;
 
   Agent({
     required this.id,
@@ -13,6 +14,7 @@ class Agent{
     required this.iconUrl,
     required this.fullPortrait,
     required this.role,
+    required this.abilities,
 });
 
   Map<String, dynamic> toMap() {
@@ -23,6 +25,7 @@ class Agent{
     "iconUrl": iconUrl,
     "fullPortrait": fullPortrait,
     "role": role,
+    "abilities": abilities,
   };
   }
   factory Agent.fromMap(Map<dynamic, dynamic> map) {
@@ -33,6 +36,7 @@ class Agent{
       iconUrl: map["iconUrl"] ?? "",
       fullPortrait: map["fullPortrait"] ?? "",
       role: map["role"] ?? "Brak roli",
+      abilities: map["abilities"] ?? [],
     );
   }
 }

@@ -50,6 +50,52 @@ class DetailScreen extends StatelessWidget {
                       color: Colors.white70,
                     ),
                   ),
+
+                  const SizedBox(height: 24),
+                  const Text(
+                    "SKILLS",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  const Divider(color: Colors.redAccent, thickness: 2),
+                  const SizedBox(height: 12),
+
+                  for (var ability in agent.abilities)
+                    if ((ability["displayName"] ?? "").toString().isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 12.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              if (ability["displayIcon"] != null)
+                                Image.network(
+                                  ability["displayIcon"],
+                                  width: 60,
+                                  height: 60,
+                                  color: Colors.white,
+                                )
+                              else
+                                const Icon(Icons.bolt, size: 60, color: Colors.white),
+
+                              const SizedBox(width: 16),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      (ability["displayName"] ?? "").toString().toUpperCase(),
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      (ability["description"] ?? "Brak opisu").toString(),
+                                      style: const TextStyle(color: Colors.grey, fontSize: 14),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                      ),
                 ],
               ),
             ),
