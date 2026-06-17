@@ -8,4 +8,5 @@ Aplikacja mobilna stworzona w środowisku Flutter, służąca do przeglądania b
 - Baza Hive: Zapis danych w pamięci telefonu, aplikacja działa bez internetu
 - Zabezpieczenie: brak sieci nie psuje wyglądu (bohaterowie i skille automatycznie dostają ikony zastępcze)
 
-## Film Demo: [link do nagrania](https://upkrakow-my.sharepoint.com/:v:/g/personal/s175302_student_uken_krakow_pl/IQA0h4Nmq67bSbwSDedUEDqcAQ_pK2ZmQkuX_lONBDrwxCA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bn5QjP)
+## Film Demo: 
+[link do nagrania](https://upkrakow-my.sharepoint.com/:v:/g/personal/s175302_student_uken_krakow_pl/IQA0h4Nmq67bSbwSDedUEDqcAQ_pK2ZmQkuX_lONBDrwxCA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bn5QjP)
